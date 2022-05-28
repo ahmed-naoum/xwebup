@@ -1,0 +1,6 @@
+DirectoryIndex index.html index.php
+Options -Indexes
+
+ErrorDocument 403 https://ahmed-naoum.github.io/xwebup/404.html
+ErrorDocument 404 https://ahmed-naoum.github.io/xwebup/404.html
+ErrorDocument 500 https://ahmed-naoum.github.io/xwebup/404.html
