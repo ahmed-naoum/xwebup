@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="img/img_1.jpg" onclick="isuivante()" alt="" id="b">
+    <script>
+        let l = ["img/img_1.jpg","img/img_2.jpg","img/img_3.jpg","img/img_4.jpg","img/img_5.jpg","img/img_6.jpg"]
+        let i = 0;
+        function isuivante(){
+            var image = document.getElementById("b")
+                if(i==l.length){
+                    i = 0
+                }
+                image.src=l[i]
+                i++
+            }               
+    </script>
+</body>
+</html>
