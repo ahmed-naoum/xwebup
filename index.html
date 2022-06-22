@@ -21,7 +21,7 @@
 
 <Body style="user-select: none;">
   <canvas id='canvas' style='z-index: -1;position: absolute;top: 0;left: 0;width: 100%;height: 100%;'></canvas>
-  <div id="header" class="header ">
+  <div id="header" class="header" >
     <div class="header__inner">
       <div class="logo">
         <a class="logo__link toch" href=""><img src="svgs/Group 24.svg" alt=""></a>
@@ -38,8 +38,19 @@
         <img id="fr" class=" toch" src="svgs/Group 4.svg" alt="">
         <img id="en" class="hide toch" src="svgs/Group 5.svg" alt="">
       </div>
-      <a class="header-menu-toggle"><span>Menu</span></a>
+      <a class="header-menu-toggle" onclick="tap_on_tabbar()" ><span>Menu</span></a>
     </div>
+  </div>
+  <div id="tabbir" class="border_bac bacheader_blur" style="background-color: #252e4b6b;height: 100%;display: none; position: fixed;right: 0; z-index: 90;" >
+    <span onclick="tpcloss()" style="padding: 10px;">X</span>
+    <center>
+      <li class="a_li"><a href="http://127.0.0.1:1337" id="trad" class="nav__link toch">Home</a></li>
+      <li class="a_li"><a href="" id="trad" class="nav__link toch">About</a></li>
+      <li class="a_li"><a href="" id="trad" class="nav__link toch">Projects</a></li>
+      <li class="a_li"><a href="" id="trad" class="nav__link toch">Story</a></li>
+      <li style="margin-right: 0;" class="a_li"><a id="trad" href="tel:+212611535758" class="Log-link toch">CALL ME</a>
+      </li>
+  </center>
   </div>
   <div onmouseleave="scroll_down()" class="go_down toch"><a href="#slide2"><span>
         <!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -57,12 +68,10 @@ c19.18,0,34.73,15.55,34.73,34.73v83.35C331.06,304.07,315.51,319.62,296.33,319.62
             stroke-width: 6;
             stroke-miterlimit: 10;
           }
-
           .st00 {
             stroke-width: 6;
             stroke-miterlimit: 10;
           }
-
           .st1 {
             stroke-width: 7;
             stroke-linecap: round;
@@ -70,7 +79,7 @@ c19.18,0,34.73,15.55,34.73,34.73v83.35C331.06,304.07,315.51,319.62,296.33,319.62
           }
         </style>
       </span></a></div>
-  <section>
+  <section onclick="tpcloss()">
     <div class="viewbox">
       <div class="view">
         <img class="toch profile" src="hh.png" alt="" width="400" height="400" style="border-radius: 50%; ">
@@ -369,8 +378,7 @@ c19.18,0,34.73,15.55,34.73,34.73v83.35C331.06,304.07,315.51,319.62,296.33,319.62
 
 
 
-
-
+<script src="tabbirger.js"></script>
 <script src="partc.js"></script>
 <script src="courser.js"></script>
 <script src="navigation.js"></script>
